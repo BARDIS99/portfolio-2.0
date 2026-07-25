@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Speaker — Computer Science Student & Web Developer</title>
+<meta name="description" content="Portfolio of Speaker — Computer Science student at Taraba State University, SIWES intern in networking & data analysis, and self-taught web developer.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Background network canvas: signature element, visualizes packet/node routing -->
+<canvas id="net-canvas"></canvas>
+
+<!-- ===== NAV ===== -->
+<header class="nav" id="nav">
+  <a href="#top" class="nav__brand">Speaker<span class="dot">.</span></a>
+
+  <nav class="nav__links" id="nav-links">
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <a href="#contact" class="nav__cta">Let's talk</a>
+
+  <button class="nav__toggle" id="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
+</header>
+
+<main id="top">
+
+  <!-- ===== HERO ===== -->
+  <section class="hero">
+    <p class="eyebrow reveal">$ whoami</p>
+    <h1 class="hero__name reveal">Speaker</h1>
+    <p class="hero__role reveal">Computer Science Student &amp; Web Developer</p>
+    <p class="hero__desc reveal">
+      Studying Computer Science at Taraba State University. Currently on industrial
+      training with Sandlip Oasis, working across networking and data analysis.
+      Outside of that, I build small, functional web apps and learn by shipping them.
+    </p>
+    <div class="hero__actions reveal">
+      <a href="#projects" class="btn btn--primary">View Projects</a>
+      <a href="#contact" class="btn btn--ghost">Get In Touch</a>
+    </div>
+  </section>
+
+  <!-- ===== ABOUT ===== -->
+  <section class="section" id="about">
+    <p class="eyebrow reveal">$ cat about.md</p>
+    <h2 class="section__title reveal">About</h2>
+    <div class="about__grid">
+      <p class="about__text reveal">
+   I'm a Computer Science student from  Taraba State, Nigeria. From June to December 2026, I'm on industrial training (SIWES) at Sandlip Oasis, focused on full stack web development — building and shipping real web applications from front end to back end. 
+      </p>
+      <p class="about__text reveal">
+       Alongside coursework and IT, I teach myself web development by building real projects — from an AI-powered post generator to a Nigerian restaurant ordering platform. I favour clean, minimal code over clever code, and I'd rather ship something small and working than leave something big unfinished
+      </p>
+    </div>
+
+    <div class="stats reveal">
+      <div class="stat">
+        <span class="stat__num">6+</span>
+        <span class="stat__label">Projects shipped</span>
+      </div>
+      <div class="stat">
+        <span class="stat__num">2</span>
+        <span class="stat__label">Focus areas — Networking &amp; Data</span>
+      </div>
+      <div class="stat">
+        <span class="stat__num">2026</span>
+        <span class="stat__label">SIWES @ Sandlip Oasis</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SKILLS ===== -->
+  <section class="section" id="skills">
+    <p class="eyebrow reveal">$ ls skills/</p>
+    <h2 class="section__title reveal">Skills</h2>
+
+    <div class="skills__grid">
+      <div class="skill-group reveal">
+        <h3>Core</h3>
+        <ul class="chips">
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>JavaScript</li>
+          <li>Git &amp; GitHub</li>
+        </ul>
+      </div>
+
+      <div class="skill-group reveal">
+        <h3>Backend &amp; Data</h3>
+        <ul class="chips">
+          <li>Python</li>
+          <li>Flask</li>
+          <li>Node.js</li>
+          <li>SQLite</li>
+        </ul>
+      </div>
+
+      <div class="skill-group reveal">
+        <h3>Currently learning</h3>
+        <ul class="chips">
+          <li>Networking fundamentals</li>
+          <li>Data analysis</li>
+          <li>Web3 &amp; blockchain</li>
+        </ul>
+      </div>
+
+      <div class="skill-group reveal">
+        <h3>Deploy &amp; tools</h3>
+        <ul class="chips">
+          <li>Vercel</li>
+          <li>Render</li>
+          <li>REST APIs</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PROJECTS ===== -->
+  <section class="section" id="projects">
+    <p class="eyebrow reveal">$ ls projects/</p>
+    <h2 class="section__title reveal">Projects</h2>
+
+    <div class="projects__grid">
+
+      <article class="card reveal">
+        <div class="card__head">
+          <h3>HypeDaily</h3>
+          <span class="card__tag">Featured</span>
+        </div>
+        <p>AI-powered motivational post generator that turns a prompt into a
+        ready-to-share message, built end to end and deployed live.</p>
+        <ul class="tech">
+          <li>Node.js</li><li>Gemini API</li>
+        </ul>
+        <div class="card__links">
+          <a href="https://github.com/BARDIS99/hypedaily" target="_blank" rel="noopener">→ view_code</a>
+          <a href="https://hypedaily.onrender.com" target="_blank" rel="noopener">→ live_demo</a>
+        </div>
+      </article>
+
+      <article class="card reveal">
+        <div class="card__head">
+          <h3>Magic food</h3>
+          <span class="card__tag">Featured</span>
+        </div>
+        <p>Ordering platform for a Nigerian restaurant, with a Naira-based
+        checkout and OPay payment integration.</p>
+        <ul class="tech">
+          <li>Python</li><li>Flask</li><li>SQLite</li><li>OPay</li>
+        </ul>
+        <div class="card__links">
+          <span class="card__note">Repo link coming soon</span>
+        </div>
+      </article>
+
+      <article class="card reveal">
+        <div class="card__head">
+          <h3>Atmos</h3>
+        </div>
+        <p>Weather mood reader — search a city and get live weather turned into
+        a mood, a colour palette, and a short poetic line, with °C/°F toggle
+        and recent searches saved locally.</p>
+        <ul class="tech">
+          <li>HTML</li><li>CSS</li><li>JavaScript</li><li>Open-Meteo API</li>
+        </ul>
+        <div class="card__links">
+          <span class="card__note">Repo link coming soon</span>
+        </div>
+      </article>
+
+      <article class="card reveal">
+        <div class="card__head">
+          <h3>CGPA Calculator</h3>
+        </div>
+        <p>Grade point calculator built on the Nigerian 5-point scale, made
+        for quick, no-fuss CGPA tracking.</p>
+        <ul class="tech">
+          <li>HTML</li><li>CSS</li><li>JavaScript</li>
+        </ul>
+        <div class="card__links">
+          <a href="https://github.com/BARDIS99/Sandlipoasisfronted" target="_blank" rel="noopener">→ view_code</a>
+        </div>
+      </article>
+
+      <article class="card reveal">
+        <div class="card__head">
+          <h3>Smart To-Do List</h3>
+        </div>
+        <p>A coursework to-do app built in vanilla JavaScript, no frameworks —
+        add, complete, and manage tasks with a clean, minimal interface.</p>
+        <ul class="tech">
+          <li>HTML</li><li>CSS</li><li>JavaScript</li>
+        </ul>
+        <div class="card__links">
+          <span class="card__note">Repo link coming soon</span>
+        </div>
+      </article>
+
+      <article class="card reveal">
+        <div class="card__head">
+          <h3>Big Ben Photography</h3>
+          <span class="card__tag">Client work</span>
+        </div>
+        <p>Portfolio site built for a photographer friend, with a masonry
+        gallery, Naira-based pricing, and a localStorage-powered admin panel.</p>
+        <ul class="tech">
+          <li>HTML</li><li>CSS</li><li>JavaScript</li>
+        </ul>
+        <div class="card__links">
+          <span class="card__note">Repo link coming soon</span>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- ===== CONTACT ===== -->
+  <section class="section" id="contact">
+    <p class="eyebrow reveal">$ contact --info</p>
+    <h2 class="section__title reveal">Let's work together</h2>
+    <p class="contact__desc reveal">
+      Open to internships, freelance builds, and anything that lets me learn
+      by shipping. Reach out below.
+    </p>
+
+    <div class="contact__links reveal">
+      <a href="mailto:bardisbas@gmail.com" class="contact__item">
+        <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg>
+        bardisbas@gmail.com
+      </a>
+      <a href="https://github.com/BARDIS99" target="_blank" rel="noopener" class="contact__item">
+        <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M12 .5C5.6.5.5 5.6.5 12c0 5.1 3.3 9.4 7.9 11 .6.1.8-.3.8-.6v-2.2c-3.2.7-3.9-1.4-3.9-1.4-.5-1.3-1.3-1.7-1.3-1.7-1.1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1 1.8 2.8 1.3 3.5 1 .1-.8.4-1.3.8-1.6-2.6-.3-5.3-1.3-5.3-5.7 0-1.3.4-2.3 1.2-3.1-.1-.3-.5-1.5.1-3.1 0 0 1-.3 3.2 1.2a11 11 0 015.8 0c2.2-1.5 3.2-1.2 3.2-1.2.6 1.6.2 2.8.1 3.1.8.8 1.2 1.9 1.2 3.1 0 4.4-2.7 5.4-5.3 5.7.4.4.8 1.1.8 2.2v3.3c0 .3.2.7.8.6 4.6-1.6 7.9-5.9 7.9-11C23.5 5.6 18.4.5 12 .5z"/></svg>
+        github.com/BARDIS99
+      </a>
+      <a href="https://x.com/SpeakerNG1" target="_blank" rel="noopener" class="contact__item">
+        <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M18.9 2H22l-7.6 8.7L23.3 22h-7.1l-5.5-7.2L4.4 22H1.3l8.2-9.3L1 2h7.3l5 6.6L18.9 2zm-1.2 18h1.9L7.4 4H5.4l12.3 16z"/></svg>
+        @SpeakerNG1
+      </a>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <p>Built &amp; maintained by Speaker · <span id="year"></span></p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
