@@ -1,83 +1,66 @@
-# Ibrahim Portfolio
+# Ibrahim — Portfolio 2.0
 
-A futuristic single-page portfolio website for Ibrahim, a Computer Science student and SIWES intern focused on full-stack web development and real-world software projects.
+Personal portfolio website built with a futuristic 2030 design aesthetic. Showcases my projects, skills, and background as a Computer Science student and SIWES intern at Sandlip Oasis.
 
-## Overview
+🔗 **Live:** [portfolio-2-0-chi.vercel.app](https://portfolio-2-0-chi.vercel.app) *(update with your actual URL)*
 
-This project is a modern, cyber-inspired portfolio built with plain HTML, CSS, and JavaScript. It showcases:
-
-- personal introduction and background
-- technology stack and learning focus
-- featured project cards
-- contact links for email, GitHub, and X/Twitter
-- responsive layout with animated UI effects
-
-## Live Style
-
-The site uses a sci-fi aesthetic with:
-
-- neon cyan/violet theme
-- holographic background grid
-- floating particle animation
-- typed role rotation
-- scroll reveal effects
-- responsive navigation for mobile devices
+---
 
 ## Tech Stack
 
 - HTML5
-- CSS3
+- CSS3 (custom design system, no frameworks)
 - Vanilla JavaScript
-- Google Fonts
+
+## Features
+
+- Animated holographic canvas with node network
+- Glitch text effects on hero name
+- Typing role cycler
+- Scroll reveal animations
+- Skill bar progress animations
+- 3D card tilt on hover
+- Live system clock
+- Floating particles
+- Profile avatar with spinning ring frame
+- Fully responsive (mobile, tablet, desktop)
+- Reduced motion support
+
+## Projects Showcased
+
+| # | Project | Link |
+|---|---------|------|
+| 001 | 9jaClip | [9jaclip-global.vercel.app](https://9jaclip-global.vercel.app) |
+| 002 | Oasis Clock-In | [oasis-clock-in.vercel.app](https://oasis-clock-in.vercel.app) |
+| 003 | EduDocs | [v0-student-education-website.vercel.app](https://v0-student-education-website.vercel.app) |
+| 004 | To-Do List App | [todo-web-1m4q.vercel.app](https://todo-web-1m4q.vercel.app) |
+| 005 | Note App | [note-app-steel-tau.vercel.app](https://note-app-steel-tau.vercel.app) |
+| 006 | Atmos | [weather-app-gq8y.vercel.app](https://weather-app-gq8y.vercel.app) |
+| 007 | Blind Voting App | [v0-blind-voting-app.vercel.app](https://v0-blind-voting-app.vercel.app) |
+| 008 | Speaker FX | [landing-page-psi-pearl-87.vercel.app](https://landing-page-psi-pearl-87.vercel.app) |
 
 ## Project Structure
 
-```bash
-.
-├── index.html        # Page structure and content
-├── style.css         # Main styling and animations
-├── script.js         # Interactivity, clock, typing effect, particles, and canvas animation
-├── img/              # Project images and profile assets
-├── README.md         # Project documentation
-└── .git/             # Git metadata
+```
+portfolio 2.0/
+├── index.html      # Main HTML
+├── style.css       # All styles
+├── script.js       # Animations & interactions
+├── img/
+│   └── profile.jpg # Profile photo
+└── README.md
 ```
 
-## Run Locally
+## Running Locally
 
-Because this is a static website, you can run it in two simple ways:
-
-### Option 1: Open directly
-
-Open `index.html` in a browser.
-
-### Option 2: Serve locally with Python
-
-```bash
-cd "/home/speaker/Desktop/my project/portfolio 2.0"
-python3 -m http.server 8000
-```
-
-Then visit:
-
-```text
-http://localhost:8000
-```
-
-## Customize the Portfolio
-
-- Update personal details in `index.html`
-- Edit colors, spacing, and layout in `style.css`
-- Change animation behavior and interactivity in `script.js`
-- Replace the profile image in `img/` with your own photo
+No build step needed. Just open `index.html` in your browser, or use VS Code Live Server.
 
 ## Contact
 
-The portfolio includes links to:
-
 - Email: bardisbas@gmail.com
-- GitHub: github.com/BARDIS99
-- X/Twitter: @SpeakerNG1
+- GitHub: [@BARDIS99](https://github.com/BARDIS99)
+- X / Twitter: [@SpeakerNG1](https://x.com/SpeakerNG1)
 
-## Notes
+---
 
-This project is designed as a personal portfolio and does not require a build step or package installation. It is ready to be opened or served as a static site.
+Built by Ibrahim · Taraba, Nigeria
