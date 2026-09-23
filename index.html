@@ -1,1 +1,166 @@
-<placeholder>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ibrahim — Developer from 2030</title>
+<meta name="description" content="Portfolio of Ibrahim — Computer Science student, SIWES intern, and self-taught web developer with a vision from the future.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;700;900&family=Space+Grotesk:wght@300;400;500;600;700&family=JetBrains+Mono:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="scanlines" aria-hidden="true"></div>
+<canvas id="holo-canvas"></canvas>
+<div class="particles" id="particles" aria-hidden="true"></div>
+<header class="nav" id="nav">
+  <a href="#top" class="nav__brand" aria-label="Home">
+    <span class="nav__brand-bracket">[</span>
+    <span class="nav__brand-text">IBR<span class="glitch-char">A</span>HIM</span>
+    <span class="nav__brand-bracket">]</span>
+  </a>
+  <nav class="nav__links" id="nav-links" aria-label="Main navigation">
+    <a href="#about"><span class="link-num">01</span>About</a>
+    <a href="#skills"><span class="link-num">02</span>Skills</a>
+    <a href="#projects"><span class="link-num">03</span>Projects</a>
+    <a href="#contact"><span class="link-num">04</span>Contact</a>
+  </nav>
+  <a href="#contact" class="nav__cta"><span class="nav__cta-inner">INITIATE CONTACT</span></a>
+  <button class="nav__toggle" id="nav-toggle" aria-label="Toggle menu" aria-expanded="false"><span></span><span></span><span></span></button>
+</header>
+<div class="status-bar" aria-hidden="true">
+  <span class="status-item"><span class="status-dot"></span>SYSTEM ONLINE</span>
+  <span class="status-item">LOC: TARABA, NG</span>
+  <span class="status-item">SIWES: ACTIVE</span>
+  <span class="status-item" id="sys-time">--:--:--</span>
+</div>
+<main id="top">
+  <section class="hero">
+    <div class="hero__content">
+      <div class="hero__tag reveal"><span class="tag-dot"></span><span>FULL STACK DEVELOPER</span></div>
+      <h1 class="hero__name reveal" data-text="Ibrahim">Ibrahim</h1>
+      <div class="hero__role-wrap reveal">
+        <span class="hero__role-prefix">&gt;_</span>
+        <span class="hero__role" id="typed-role">Computer Science Student</span>
+        <span class="cursor-blink">|</span>
+      </div>
+      <p class="hero__desc reveal">Building from the future — web apps, network systems, and data pipelines. Currently on SIWES at <span class="highlight">Sandlip Oasis</span>. I ship real things. Small, working, and always learning.</p>
+      <div class="hero__stats reveal">
+        <div class="hstat"><span class="hstat__val">8<span class="hstat__plus">+</span></span><span class="hstat__label">Projects</span></div>
+        <div class="hstat__divider"></div>
+        <div class="hstat"><span class="hstat__val">2026</span><span class="hstat__label">SIWES Year</span></div>
+        <div class="hstat__divider"></div>
+        <div class="hstat"><span class="hstat__val">∞</span><span class="hstat__label">Learning</span></div>
+      </div>
+      <div class="hero__actions reveal">
+        <a href="#projects" class="btn btn--primary"><span class="btn-glow"></span><span>VIEW PROJECTS</span></a>
+        <a href="#contact" class="btn btn--ghost"><span>GET IN TOUCH</span></a>
+      </div>
+    </div>
+    <div class="hero__avatar reveal">
+      <div class="avatar__frame">
+        <div class="avatar__ring avatar__ring--1"></div>
+        <div class="avatar__ring avatar__ring--2"></div>
+        <div class="avatar__ring avatar__ring--3"></div>
+        <div class="avatar__img-wrap">
+          <img src="img/profile.jpg" alt="Ibrahim" class="avatar__photo" onerror="this.parentElement.classList.add('avatar--no-photo')">
+        </div>
+        <div class="avatar__badge"><span class="badge-dot"></span>AVAILABLE</div>
+      </div>
+    </div>
+  </section>
+  <section class="section" id="about">
+    <div class="section__header reveal"><p class="eyebrow">// 01 — ABOUT.SYS</p><h2 class="section__title">Who <span class="gradient-text">I Am</span></h2></div>
+    <div class="about__layout">
+      <div class="about__text-col">
+        <p class="about__text reveal">I'm a Computer Science student from Taraba State, Nigeria. From June to December 2026, I'm on industrial training (SIWES) at <span class="highlight">Sandlip Oasis</span>, focused on full stack web development.</p>
+        <p class="about__text reveal">I self-teach by building. I favour clean, minimal code over clever code.</p>
+      </div>
+    </div>
+    <div class="stats reveal">
+      <div class="stat"><span class="stat__num">8<span class="stat__plus">+</span></span><span class="stat__label">Projects Shipped</span></div>
+      <div class="stat"><span class="stat__num">2026</span><span class="stat__label">SIWES @ Sandlip Oasis</span></div>
+    </div>
+  </section>
+  <section class="section" id="skills">
+    <div class="section__header reveal"><p class="eyebrow">// 02 — SKILLS.DB</p><h2 class="section__title">Tech <span class="gradient-text">Stack</span></h2></div>
+    <div class="skills__grid">
+      <div class="skill-card reveal"><h3>Frontend</h3><ul class="skill-list"><li>HTML / CSS</li><li>JavaScript</li><li>Responsive Design</li></ul></div>
+      <div class="skill-card reveal"><h3>Backend &amp; Data</h3><ul class="skill-list"><li>Python / Flask</li><li>Node.js</li><li>SQLite / REST APIs</li></ul></div>
+      <div class="skill-card reveal"><h3>Infrastructure</h3><ul class="skill-list"><li>Git &amp; GitHub</li><li>Vercel / Render</li></ul></div>
+    </div>
+  </section>
+  <section class="section" id="projects">
+    <div class="section__header reveal"><p class="eyebrow">// 03 — PROJECTS.LOG</p><h2 class="section__title">Shipped <span class="gradient-text">Work</span></h2></div>
+    <div class="projects__grid">
+      <article class="pcard pcard--featured reveal">
+        <div class="pcard__num">001</div>
+        <div class="pcard__head"><h3>9jaClip</h3><span class="pcard__tag pcard__tag--featured">FEATURED</span></div>
+        <p>Clipping marketplace — investors fund campaigns, clippers post and earn. Studio dashboard for TikTok, Reels, X and YouTube.</p>
+        <ul class="tech"><li>React</li><li>TypeScript</li><li>Supabase</li></ul>
+        <div class="pcard__links"><a href="https://9jaclip-global.vercel.app/studio" target="_blank" rel="noopener" class="plink plink--live"><span class="live-dot"></span>LIVE</a></div>
+      </article>
+      <article class="pcard pcard--featured reveal">
+        <div class="pcard__num">002</div>
+        <div class="pcard__head"><h3>Oasis Clock-In</h3><span class="pcard__tag pcard__tag--featured">FEATURED</span></div>
+        <p>SIWES attendance system for Sandlip Oasis.</p>
+        <ul class="tech"><li>HTML</li><li>CSS</li><li>JavaScript</li></ul>
+        <div class="pcard__links"><a href="https://oasis-clock-in.vercel.app" target="_blank" rel="noopener" class="plink plink--live"><span class="live-dot"></span>LIVE</a></div>
+      </article>
+      <article class="pcard pcard--featured reveal">
+        <div class="pcard__num">003</div>
+        <div class="pcard__head"><h3>EduDocs</h3><span class="pcard__tag pcard__tag--featured">FEATURED</span></div>
+        <p>Student learning platform for notes and study guides.</p>
+        <ul class="tech"><li>HTML</li><li>CSS</li><li>JavaScript</li></ul>
+        <div class="pcard__links"><a href="https://v0-student-education-website.vercel.app" target="_blank" rel="noopener" class="plink plink--live"><span class="live-dot"></span>LIVE</a></div>
+      </article>
+      <article class="pcard reveal">
+        <div class="pcard__num">004</div>
+        <div class="pcard__head"><h3>To-Do List App</h3></div>
+        <p>Clean task manager in vanilla JS.</p>
+        <ul class="tech"><li>HTML</li><li>CSS</li><li>JavaScript</li></ul>
+        <div class="pcard__links"><a href="https://todo-web-1m4q.vercel.app" target="_blank" rel="noopener" class="plink plink--live"><span class="live-dot"></span>LIVE</a></div>
+      </article>
+      <article class="pcard reveal">
+        <div class="pcard__num">005</div>
+        <div class="pcard__head"><h3>Note App</h3></div>
+        <p>Minimal note-taking app.</p>
+        <ul class="tech"><li>HTML</li><li>CSS</li><li>JavaScript</li></ul>
+        <div class="pcard__links"><a href="https://note-app-steel-tau.vercel.app" target="_blank" rel="noopener" class="plink plink--live"><span class="live-dot"></span>LIVE</a></div>
+      </article>
+      <article class="pcard reveal">
+        <div class="pcard__num">006</div>
+        <div class="pcard__head"><h3>Atmos</h3></div>
+        <p>Weather mood reader with Open-Meteo.</p>
+        <ul class="tech"><li>HTML</li><li>CSS</li><li>JavaScript</li></ul>
+        <div class="pcard__links"><a href="https://weather-app-gq8y.vercel.app" target="_blank" rel="noopener" class="plink plink--live"><span class="live-dot"></span>LIVE</a></div>
+      </article>
+      <article class="pcard reveal">
+        <div class="pcard__num">007</div>
+        <div class="pcard__head"><h3>Blind Voting App</h3></div>
+        <p>Anonymous poll voting app.</p>
+        <ul class="tech"><li>HTML</li><li>CSS</li><li>JavaScript</li></ul>
+        <div class="pcard__links"><a href="https://v0-blind-voting-app.vercel.app" target="_blank" rel="noopener" class="plink plink--live"><span class="live-dot"></span>LIVE</a></div>
+      </article>
+      <article class="pcard reveal">
+        <div class="pcard__num">008</div>
+        <div class="pcard__head"><h3>Speaker FX</h3></div>
+        <p>Trading platform landing page.</p>
+        <ul class="tech"><li>HTML</li><li>CSS</li><li>JavaScript</li></ul>
+        <div class="pcard__links"><a href="https://landing-page-psi-pearl-87.vercel.app" target="_blank" rel="noopener" class="plink plink--live"><span class="live-dot"></span>LIVE</a></div>
+      </article>
+    </div>
+  </section>
+  <section class="section" id="contact">
+    <div class="section__header reveal"><p class="eyebrow">// 04 — CONTACT.EXE</p><h2 class="section__title">Let's <span class="gradient-text">Connect</span></h2></div>
+    <div class="contact__grid reveal">
+      <a href="mailto:bardisbas@gmail.com" class="contact__card"><div class="contact__card-info"><span class="contact__card-label">EMAIL</span><span class="contact__card-val">bardisbas@gmail.com</span></div></a>
+      <a href="https://github.com/BARDIS99" target="_blank" rel="noopener" class="contact__card"><div class="contact__card-info"><span class="contact__card-label">GITHUB</span><span class="contact__card-val">github.com/BARDIS99</span></div></a>
+    </div>
+  </section>
+</main>
+<footer class="footer"><div class="footer__inner"><span class="footer__brand">[IBRAHIM]</span><p>Designed &amp; built by Ibrahim · <span id="year"></span></p></div></footer>
+<script src="script.js"></script>
+</body>
+</html>
