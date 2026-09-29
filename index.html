@@ -11,14 +11,13 @@
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
+<div class="glow glow-a"></div>
+<div class="glow glow-b"></div>
 <div class="page">
   <header class="nav">
     <a class="brand" href="#top">
       <span class="brand__mark">I</span>
-      <span>
-        <strong>Ibrahim</strong>
-        <small>Full Stack Developer</small>
-      </span>
+      <span><strong>Ibrahim</strong><small>Full Stack Developer</small></span>
     </a>
     <nav>
       <a href="#top" class="is-active">Home</a>
@@ -30,104 +29,107 @@
     </nav>
     <a class="btn btn--dark" href="#contact">Let's Talk →</a>
   </header>
-  <section class="card hero" id="top">
-    <div>
+  <section class="panel hero" id="top">
+    <div class="hero__copy">
       <p class="eyebrow">HELLO, I'M</p>
       <h1>Ibrahim</h1>
       <h2>Full Stack Developer</h2>
-      <p class="lead">I build clean web apps, dashboards, and systems that actually ship. Currently on SIWES at Sandlip Oasis.</p>
+      <p class="lead">I craft web apps and systems that are simple, useful, and live. CS student on SIWES at Sandlip Oasis — I ship real things.</p>
       <div class="hero__actions">
         <a class="btn btn--dark" href="#work">View My Work →</a>
         <a class="btn btn--ghost" href="https://github.com/BARDIS99" target="_blank" rel="noopener">GitHub</a>
       </div>
+      <p class="trusted">Building with React · Python · Vercel</p>
     </div>
     <div class="hero__visual">
-      <div class="photo-wrap">
-        <img src="img/profile.jpg" alt="Ibrahim">
-      </div>
-      <div class="float-card float-card--exp"><b>8+</b><span>Projects shipped</span></div>
-      <div class="float-card float-card--stat"><span>SIWES 2026</span><strong>Active</strong></div>
+      <div class="orb"></div>
+      <div class="photo-wrap"><img src="img/profile.jpg" alt="Ibrahim"></div>
+      <div class="float float--exp"><b>8+</b><span>Projects shipped</span></div>
+      <div class="float float--live"><span>SIWES 2026</span><strong>● Active</strong></div>
     </div>
   </section>
-  <section class="card" id="about">
-    <div class="split">
+  <section class="panel" id="about">
+    <div class="about">
       <div>
         <p class="eyebrow">ABOUT ME</p>
         <h3>Building with purpose.<br>Shipping with care.</h3>
-        <div class="mini-stats">
-          <div><b>8+</b><span>Projects</span></div>
-          <div><b>2026</b><span>SIWES Year</span></div>
-          <div><b>NG</b><span>Taraba</span></div>
+        <div class="stats">
+          <div class="stat"><b>8+</b><span>Projects</span></div>
+          <div class="stat"><b>2026</b><span>SIWES year</span></div>
+          <div class="stat"><b>NG</b><span>Taraba</span></div>
         </div>
       </div>
-      <div>
-        <p>I'm a Computer Science student from Taraba State, Nigeria. From June to December 2026 I'm on industrial training at Sandlip Oasis, focused on full stack web development.</p>
-        <p>I self-teach by building. Clean, minimal code over clever code.</p>
-        <a class="text-link" href="#contact">More About Me →</a>
+      <div class="about__text">
+        <p>I'm a Computer Science student from Taraba State, Nigeria. June–December 2026 I'm on industrial training at Sandlip Oasis, focused on full stack web development.</p>
+        <p>I learn by shipping. Clean, minimal code over clever code.</p>
+        <a class="btn btn--ghost" href="#contact">More About Me →</a>
       </div>
     </div>
   </section>
-  <section class="card" id="services">
+  <section class="panel" id="services">
     <p class="eyebrow">WHAT I DO</p>
     <h3>Services I Offer</h3>
-    <div class="grid-4">
-      <article class="tile"><h4>Web Apps</h4><p>Responsive sites and product UIs with HTML, CSS, JS, React.</p></article>
-      <article class="tile"><h4>Backend</h4><p>APIs and data layers with Python, Flask, Node, and SQLite.</p></article>
-      <article class="tile"><h4>Dashboards</h4><p>Studio tools, attendance systems, and admin flows that stay simple.</p></article>
-      <article class="tile"><h4>Ship &amp; Host</h4><p>Git, GitHub, Vercel, and Render — from idea to live URL.</p></article>
+    <div class="services">
+      <article class="tile"><span class="ico ico-a">▣</span><h4>Web Apps</h4><p>Responsive product UIs with HTML, CSS, JS and React.</p></article>
+      <article class="tile"><span class="ico ico-b">◈</span><h4>Backend</h4><p>APIs and data with Python, Flask, Node and SQLite.</p></article>
+      <article class="tile"><span class="ico ico-c">▦</span><h4>Dashboards</h4><p>Studio tools and attendance flows that stay simple.</p></article>
+      <article class="tile"><span class="ico ico-d">↑</span><h4>Ship &amp; Host</h4><p>GitHub to Vercel/Render — idea to live URL.</p></article>
     </div>
   </section>
-  <section class="card" id="skills">
+  <section class="panel" id="skills">
     <p class="eyebrow">TOOLS &amp; SKILLS</p>
     <h3>Technologies I Use</h3>
-    <div class="pills">
+    <div class="tech">
       <span>HTML</span><span>CSS</span><span>JavaScript</span><span>React</span>
       <span>TypeScript</span><span>Python</span><span>Flask</span><span>Node.js</span>
       <span>SQLite</span><span>Supabase</span><span>Git</span><span>Vercel</span>
     </div>
   </section>
-  <section class="card" id="work">
-    <div class="row-head">
-      <div>
-        <p class="eyebrow">FEATURED PROJECTS</p>
-        <h3>Selected Work</h3>
-      </div>
-      <a class="text-link" href="https://github.com/BARDIS99" target="_blank" rel="noopener">View All Projects →</a>
+  <section class="panel" id="work">
+    <div class="row">
+      <div><p class="eyebrow">FEATURED PROJECTS</p><h3>Selected Work</h3></div>
+      <a class="btn btn--ghost" href="https://github.com/BARDIS99" target="_blank" rel="noopener">View All →</a>
     </div>
-    <div class="projects">
-      <a class="project" href="https://9jaclip-global.vercel.app/studio" target="_blank" rel="noopener"><div class="project__preview p1"></div><div class="project__meta"><b>9jaClip</b><span>React · TypeScript · Supabase</span></div></a>
-      <a class="project" href="https://oasis-clock-in.vercel.app" target="_blank" rel="noopener"><div class="project__preview p2"></div><div class="project__meta"><b>Oasis Clock-In</b><span>HTML · CSS · JavaScript</span></div></a>
-      <a class="project" href="https://v0-student-education-website.vercel.app" target="_blank" rel="noopener"><div class="project__preview p3"></div><div class="project__meta"><b>EduDocs</b><span>Student learning platform</span></div></a>
-      <a class="project" href="https://todo-web-1m4q.vercel.app" target="_blank" rel="noopener"><div class="project__preview p4"></div><div class="project__meta"><b>To-Do App</b><span>Vanilla JS</span></div></a>
-      <a class="project" href="https://note-app-steel-tau.vercel.app" target="_blank" rel="noopener"><div class="project__preview p5"></div><div class="project__meta"><b>Note App</b><span>Vanilla JS</span></div></a>
-      <a class="project" href="https://weather-app-gq8y.vercel.app" target="_blank" rel="noopener"><div class="project__preview p6"></div><div class="project__meta"><b>Atmos</b><span>Weather · Open-Meteo</span></div></a>
+    <div class="work">
+      <a class="work-card" href="https://9jaclip-global.vercel.app/studio" target="_blank" rel="noopener"><div class="shot s1"></div><div class="work-meta"><div><b>9jaClip</b><small>React · TypeScript · Supabase</small></div><span>→</span></div></a>
+      <a class="work-card" href="https://oasis-clock-in.vercel.app" target="_blank" rel="noopener"><div class="shot s2"></div><div class="work-meta"><div><b>Oasis Clock-In</b><small>Attendance system</small></div><span>→</span></div></a>
+      <a class="work-card" href="https://v0-student-education-website.vercel.app" target="_blank" rel="noopener"><div class="shot s3"></div><div class="work-meta"><div><b>EduDocs</b><small>Student learning platform</small></div><span>→</span></div></a>
+    </div>
+    <div class="work work--mini">
+      <a class="mini" href="https://todo-web-1m4q.vercel.app" target="_blank" rel="noopener"><b>To-Do App</b><small>Vanilla JS</small></a>
+      <a class="mini" href="https://note-app-steel-tau.vercel.app" target="_blank" rel="noopener"><b>Note App</b><small>Vanilla JS</small></a>
+      <a class="mini" href="https://weather-app-gq8y.vercel.app" target="_blank" rel="noopener"><b>Atmos</b><small>Weather</small></a>
+      <a class="mini" href="https://v0-blind-voting-app.vercel.app" target="_blank" rel="noopener"><b>Blind Voting</b><small>Polls</small></a>
+      <a class="mini" href="https://landing-page-psi-pearl-87.vercel.app" target="_blank" rel="noopener"><b>Speaker FX</b><small>Landing</small></a>
     </div>
   </section>
-  <section class="card" id="process">
+  <section class="panel" id="process">
     <p class="eyebrow">MY PROCESS</p>
     <h3>How I Build</h3>
     <div class="steps">
-      <div><em>01</em><b>Discover</b><p>Understand the problem and the user.</p></div>
-      <div><em>02</em><b>Define</b><p>Scope a small version that can ship.</p></div>
-      <div><em>03</em><b>Build</b><p>Write clean UI and working backend.</p></div>
-      <div><em>04</em><b>Test</b><p>Use it, break it, fix the rough edges.</p></div>
-      <div><em>05</em><b>Ship</b><p>Deploy, share, keep improving.</p></div>
+      <div><em>01</em><b>Discover</b><p>Understand the problem.</p></div>
+      <div><em>02</em><b>Define</b><p>Scope a version that can ship.</p></div>
+      <div><em>03</em><b>Build</b><p>Clean UI and working backend.</p></div>
+      <div><em>04</em><b>Test</b><p>Use it, break it, fix it.</p></div>
+      <div><em>05</em><b>Ship</b><p>Deploy and keep improving.</p></div>
     </div>
   </section>
-  <section class="card contact" id="contact">
+  <section class="panel contact" id="contact">
     <div>
-      <p class="eyebrow">LET'S CONNECT</p>
+      <p class="eyebrow">LET'S WORK TOGETHER</p>
       <h3>Have a project in mind?</h3>
-      <p>Email or GitHub — I reply.</p>
-      <ul class="contact-list">
+      <p class="lead">Email or GitHub — I reply.</p>
+      <ul class="facts">
         <li>bardisbas@gmail.com</li>
         <li>github.com/BARDIS99</li>
         <li>Taraba, Nigeria</li>
       </ul>
     </div>
     <form action="mailto:bardisbas@gmail.com" method="get">
-      <input type="text" name="subject" placeholder="Your Name">
-      <input type="email" placeholder="Your Email">
+      <div class="form-row">
+        <input type="text" name="subject" placeholder="Your Name">
+        <input type="email" placeholder="Your Email">
+      </div>
       <textarea name="body" rows="5" placeholder="Your Message"></textarea>
       <button class="btn btn--dark" type="submit">Send Message →</button>
     </form>
