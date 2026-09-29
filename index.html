@@ -3,166 +3,137 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Ibrahim — Developer from 2030</title>
-<meta name="description" content="Portfolio of Ibrahim — Computer Science student, SIWES intern, and self-taught web developer with a vision from the future.">
+<title>Ibrahim — Full Stack Developer</title>
+<meta name="description" content="Portfolio of Ibrahim — Computer Science student, SIWES intern, and full stack developer.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;700;900&family=Space+Grotesk:wght@300;400;500;600;700&family=JetBrains+Mono:wght@300;400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
-<link rel="stylesheet" href="magic.css">
 </head>
 <body>
-<div class="scanlines" aria-hidden="true"></div>
-<canvas id="holo-canvas"></canvas>
-<div class="particles" id="particles" aria-hidden="true"></div>
-<header class="nav" id="nav">
-  <a href="#top" class="nav__brand" aria-label="Home">
-    <span class="nav__brand-bracket">[</span>
-    <span class="nav__brand-text">IBR<span class="glitch-char">A</span>HIM</span>
-    <span class="nav__brand-bracket">]</span>
-  </a>
-  <nav class="nav__links" id="nav-links" aria-label="Main navigation">
-    <a href="#about"><span class="link-num">01</span>About</a>
-    <a href="#skills"><span class="link-num">02</span>Skills</a>
-    <a href="#projects"><span class="link-num">03</span>Projects</a>
-    <a href="#contact"><span class="link-num">04</span>Contact</a>
-  </nav>
-  <a href="#contact" class="nav__cta"><span class="nav__cta-inner">INITIATE CONTACT</span></a>
-  <button class="nav__toggle" id="nav-toggle" aria-label="Toggle menu" aria-expanded="false"><span></span><span></span><span></span></button>
-</header>
-<div class="status-bar" aria-hidden="true">
-  <span class="status-item"><span class="status-dot"></span>SYSTEM ONLINE</span>
-  <span class="status-item">LOC: TARABA, NG</span>
-  <span class="status-item">SIWES: ACTIVE</span>
-  <span class="status-item" id="sys-time">--:--:--</span>
-</div>
-<main id="top">
-  <section class="hero">
-    <div class="hero__content">
-      <div class="hero__tag reveal"><span class="tag-dot"></span><span>FULL STACK DEVELOPER</span></div>
-      <h1 class="hero__name reveal" data-text="Ibrahim">Ibrahim 🪄</h1>
-      <div class="hero__role-wrap reveal">
-        <span class="hero__role-prefix">>_</span>
-        <span class="hero__role" id="typed-role">Computer Science Student</span>
-        <span class="cursor-blink">|</span>
-      </div>
-      <p class="hero__desc reveal">Building from the future — web apps, network systems, and data pipelines. Currently on SIWES at <span class="highlight">Sandlip Oasis</span>. I ship real things. Small, working, and always learning.</p>
-      <div class="hero__stats reveal">
-        <div class="hstat"><span class="hstat__val">8<span class="hstat__plus">+</span></span><span class="hstat__label">Projects</span></div>
-        <div class="hstat__divider"></div>
-        <div class="hstat"><span class="hstat__val">2026</span><span class="hstat__label">SIWES Year</span></div>
-        <div class="hstat__divider"></div>
-        <div class="hstat"><span class="hstat__val">∞</span><span class="hstat__label">Learning</span></div>
-      </div>
-      <div class="hero__actions reveal">
-        <a href="#projects" class="btn btn--primary"><span class="btn-glow"></span><span>VIEW PROJECTS</span></a>
-        <a href="#contact" class="btn btn--ghost"><span>GET IN TOUCH</span></a>
+<div class="page">
+  <header class="nav">
+    <a class="brand" href="#top">
+      <span class="brand__mark">I</span>
+      <span>
+        <strong>Ibrahim</strong>
+        <small>Full Stack Developer</small>
+      </span>
+    </a>
+    <nav>
+      <a href="#top" class="is-active">Home</a>
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#work">Work</a>
+      <a href="#process">Process</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <a class="btn btn--dark" href="#contact">Let's Talk →</a>
+  </header>
+  <section class="card hero" id="top">
+    <div>
+      <p class="eyebrow">HELLO, I'M</p>
+      <h1>Ibrahim</h1>
+      <h2>Full Stack Developer</h2>
+      <p class="lead">I build clean web apps, dashboards, and systems that actually ship. Currently on SIWES at Sandlip Oasis.</p>
+      <div class="hero__actions">
+        <a class="btn btn--dark" href="#work">View My Work →</a>
+        <a class="btn btn--ghost" href="https://github.com/BARDIS99" target="_blank" rel="noopener">GitHub</a>
       </div>
     </div>
-    <div class="hero__avatar reveal">
-      <div class="avatar__frame">
-        <div class="avatar__ring avatar__ring--1"></div>
-        <div class="avatar__ring avatar__ring--2"></div>
-        <div class="avatar__ring avatar__ring--3"></div>
-        <div class="avatar__img-wrap">
-          <img src="img/profile.jpg" alt="Ibrahim" class="avatar__photo" onerror="this.parentElement.classList.add('avatar--no-photo')">
+    <div class="hero__visual">
+      <div class="photo-wrap">
+        <img src="img/profile.jpg" alt="Ibrahim">
+      </div>
+      <div class="float-card float-card--exp"><b>8+</b><span>Projects shipped</span></div>
+      <div class="float-card float-card--stat"><span>SIWES 2026</span><strong>Active</strong></div>
+    </div>
+  </section>
+  <section class="card" id="about">
+    <div class="split">
+      <div>
+        <p class="eyebrow">ABOUT ME</p>
+        <h3>Building with purpose.<br>Shipping with care.</h3>
+        <div class="mini-stats">
+          <div><b>8+</b><span>Projects</span></div>
+          <div><b>2026</b><span>SIWES Year</span></div>
+          <div><b>NG</b><span>Taraba</span></div>
         </div>
-        <div class="avatar__badge"><span class="badge-dot"></span>AVAILABLE</div>
+      </div>
+      <div>
+        <p>I'm a Computer Science student from Taraba State, Nigeria. From June to December 2026 I'm on industrial training at Sandlip Oasis, focused on full stack web development.</p>
+        <p>I self-teach by building. Clean, minimal code over clever code.</p>
+        <a class="text-link" href="#contact">More About Me →</a>
       </div>
     </div>
   </section>
-  <section class="section" id="about">
-    <div class="section__header reveal"><p class="eyebrow">// 01 — ABOUT.SYS</p><h2 class="section__title">Who <span class="gradient-text">I Am</span></h2></div>
-    <div class="about__layout">
-      <div class="about__text-col">
-        <p class="about__text reveal">I'm a Computer Science student from Taraba State, Nigeria. From June to December 2026, I'm on industrial training (SIWES) at <span class="highlight">Sandlip Oasis</span>, focused on full stack web development.</p>
-        <p class="about__text reveal">I self-teach by building. I favour clean, minimal code over clever code.</p>
+  <section class="card" id="services">
+    <p class="eyebrow">WHAT I DO</p>
+    <h3>Services I Offer</h3>
+    <div class="grid-4">
+      <article class="tile"><h4>Web Apps</h4><p>Responsive sites and product UIs with HTML, CSS, JS, React.</p></article>
+      <article class="tile"><h4>Backend</h4><p>APIs and data layers with Python, Flask, Node, and SQLite.</p></article>
+      <article class="tile"><h4>Dashboards</h4><p>Studio tools, attendance systems, and admin flows that stay simple.</p></article>
+      <article class="tile"><h4>Ship &amp; Host</h4><p>Git, GitHub, Vercel, and Render — from idea to live URL.</p></article>
+    </div>
+  </section>
+  <section class="card" id="skills">
+    <p class="eyebrow">TOOLS &amp; SKILLS</p>
+    <h3>Technologies I Use</h3>
+    <div class="pills">
+      <span>HTML</span><span>CSS</span><span>JavaScript</span><span>React</span>
+      <span>TypeScript</span><span>Python</span><span>Flask</span><span>Node.js</span>
+      <span>SQLite</span><span>Supabase</span><span>Git</span><span>Vercel</span>
+    </div>
+  </section>
+  <section class="card" id="work">
+    <div class="row-head">
+      <div>
+        <p class="eyebrow">FEATURED PROJECTS</p>
+        <h3>Selected Work</h3>
       </div>
+      <a class="text-link" href="https://github.com/BARDIS99" target="_blank" rel="noopener">View All Projects →</a>
     </div>
-    <div class="stats reveal">
-      <div class="stat"><span class="stat__num">8<span class="stat__plus">+</span></span><span class="stat__label">Projects Shipped</span></div>
-      <div class="stat"><span class="stat__num">2026</span><span class="stat__label">SIWES @ Sandlip Oasis</span></div>
-    </div>
-  </section>
-  <section class="section" id="skills">
-    <div class="section__header reveal"><p class="eyebrow">// 02 — SKILLS.DB</p><h2 class="section__title">Tech <span class="gradient-text">Stack</span></h2></div>
-    <div class="skills__grid">
-      <div class="skill-card reveal"><h3>Frontend</h3><ul class="skill-list"><li>HTML / CSS</li><li>JavaScript</li><li>Responsive Design</li></ul></div>
-      <div class="skill-card reveal"><h3>Backend & Data</h3><ul class="skill-list"><li>Python / Flask</li><li>Node.js</li><li>SQLite / REST APIs</li></ul></div>
-      <div class="skill-card reveal"><h3>Infrastructure</h3><ul class="skill-list"><li>Git & GitHub</li><li>Vercel / Render</li></ul></div>
+    <div class="projects">
+      <a class="project" href="https://9jaclip-global.vercel.app/studio" target="_blank" rel="noopener"><div class="project__preview p1"></div><div class="project__meta"><b>9jaClip</b><span>React · TypeScript · Supabase</span></div></a>
+      <a class="project" href="https://oasis-clock-in.vercel.app" target="_blank" rel="noopener"><div class="project__preview p2"></div><div class="project__meta"><b>Oasis Clock-In</b><span>HTML · CSS · JavaScript</span></div></a>
+      <a class="project" href="https://v0-student-education-website.vercel.app" target="_blank" rel="noopener"><div class="project__preview p3"></div><div class="project__meta"><b>EduDocs</b><span>Student learning platform</span></div></a>
+      <a class="project" href="https://todo-web-1m4q.vercel.app" target="_blank" rel="noopener"><div class="project__preview p4"></div><div class="project__meta"><b>To-Do App</b><span>Vanilla JS</span></div></a>
+      <a class="project" href="https://note-app-steel-tau.vercel.app" target="_blank" rel="noopener"><div class="project__preview p5"></div><div class="project__meta"><b>Note App</b><span>Vanilla JS</span></div></a>
+      <a class="project" href="https://weather-app-gq8y.vercel.app" target="_blank" rel="noopener"><div class="project__preview p6"></div><div class="project__meta"><b>Atmos</b><span>Weather · Open-Meteo</span></div></a>
     </div>
   </section>
-  <section class="section" id="projects">
-    <div class="section__header reveal"><p class="eyebrow">// 03 — PROJECTS.LOG</p><h2 class="section__title">Shipped <span class="gradient-text">Work</span></h2></div>
-    <div class="projects__grid">
-      <article class="pcard pcard--featured reveal">
-        <div class="pcard__num">001</div>
-        <div class="pcard__head"><h3>9jaClip</h3><span class="pcard__tag pcard__tag--featured">FEATURED</span></div>
-        <p>Clipping marketplace — investors fund campaigns, clippers post and earn. Studio dashboard for TikTok, Reels, X and YouTube.</p>
-        <ul class="tech"><li>React</li><li>TypeScript</li><li>Supabase</li></ul>
-        <div class="pcard__links"><a href="https://9jaclip-global.vercel.app/studio" target="_blank" rel="noopener" class="plink plink--live"><span class="live-dot"></span>LIVE</a></div>
-      </article>
-      <article class="pcard pcard--featured reveal">
-        <div class="pcard__num">002</div>
-        <div class="pcard__head"><h3>Oasis Clock-In</h3><span class="pcard__tag pcard__tag--featured">FEATURED</span></div>
-        <p>SIWES attendance system for Sandlip Oasis.</p>
-        <ul class="tech"><li>HTML</li><li>CSS</li><li>JavaScript</li></ul>
-        <div class="pcard__links"><a href="https://oasis-clock-in.vercel.app" target="_blank" rel="noopener" class="plink plink--live"><span class="live-dot"></span>LIVE</a></div>
-      </article>
-      <article class="pcard pcard--featured reveal">
-        <div class="pcard__num">003</div>
-        <div class="pcard__head"><h3>EduDocs</h3><span class="pcard__tag pcard__tag--featured">FEATURED</span></div>
-        <p>Student learning platform for notes and study guides.</p>
-        <ul class="tech"><li>HTML</li><li>CSS</li><li>JavaScript</li></ul>
-        <div class="pcard__links"><a href="https://v0-student-education-website.vercel.app" target="_blank" rel="noopener" class="plink plink--live"><span class="live-dot"></span>LIVE</a></div>
-      </article>
-      <article class="pcard reveal">
-        <div class="pcard__num">004</div>
-        <div class="pcard__head"><h3>To-Do List App</h3></div>
-        <p>Clean task manager in vanilla JS.</p>
-        <ul class="tech"><li>HTML</li><li>CSS</li><li>JavaScript</li></ul>
-        <div class="pcard__links"><a href="https://todo-web-1m4q.vercel.app" target="_blank" rel="noopener" class="plink plink--live"><span class="live-dot"></span>LIVE</a></div>
-      </article>
-      <article class="pcard reveal">
-        <div class="pcard__num">005</div>
-        <div class="pcard__head"><h3>Note App</h3></div>
-        <p>Minimal note-taking app.</p>
-        <ul class="tech"><li>HTML</li><li>CSS</li><li>JavaScript</li></ul>
-        <div class="pcard__links"><a href="https://note-app-steel-tau.vercel.app" target="_blank" rel="noopener" class="plink plink--live"><span class="live-dot"></span>LIVE</a></div>
-      </article>
-      <article class="pcard reveal">
-        <div class="pcard__num">006</div>
-        <div class="pcard__head"><h3>Atmos</h3></div>
-        <p>Weather mood reader with Open-Meteo.</p>
-        <ul class="tech"><li>HTML</li><li>CSS</li><li>JavaScript</li></ul>
-        <div class="pcard__links"><a href="https://weather-app-gq8y.vercel.app" target="_blank" rel="noopener" class="plink plink--live"><span class="live-dot"></span>LIVE</a></div>
-      </article>
-      <article class="pcard reveal">
-        <div class="pcard__num">007</div>
-        <div class="pcard__head"><h3>Blind Voting App</h3></div>
-        <p>Anonymous poll voting app.</p>
-        <ul class="tech"><li>HTML</li><li>CSS</li><li>JavaScript</li></ul>
-        <div class="pcard__links"><a href="https://v0-blind-voting-app.vercel.app" target="_blank" rel="noopener" class="plink plink--live"><span class="live-dot"></span>LIVE</a></div>
-      </article>
-      <article class="pcard reveal">
-        <div class="pcard__num">008</div>
-        <div class="pcard__head"><h3>Speaker FX</h3></div>
-        <p>Trading platform landing page.</p>
-        <ul class="tech"><li>HTML</li><li>CSS</li><li>JavaScript</li></ul>
-        <div class="pcard__links"><a href="https://landing-page-psi-pearl-87.vercel.app" target="_blank" rel="noopener" class="plink plink--live"><span class="live-dot"></span>LIVE</a></div>
-      </article>
+  <section class="card" id="process">
+    <p class="eyebrow">MY PROCESS</p>
+    <h3>How I Build</h3>
+    <div class="steps">
+      <div><em>01</em><b>Discover</b><p>Understand the problem and the user.</p></div>
+      <div><em>02</em><b>Define</b><p>Scope a small version that can ship.</p></div>
+      <div><em>03</em><b>Build</b><p>Write clean UI and working backend.</p></div>
+      <div><em>04</em><b>Test</b><p>Use it, break it, fix the rough edges.</p></div>
+      <div><em>05</em><b>Ship</b><p>Deploy, share, keep improving.</p></div>
     </div>
   </section>
-  <section class="section" id="contact">
-    <div class="section__header reveal"><p class="eyebrow">// 04 — CONTACT.EXE</p><h2 class="section__title">Let's <span class="gradient-text">Connect</span></h2></div>
-    <div class="contact__grid reveal">
-      <a href="mailto:bardisbas@gmail.com" class="contact__card"><div class="contact__card-info"><span class="contact__card-label">EMAIL</span><span class="contact__card-val">bardisbas@gmail.com</span></div></a>
-      <a href="https://github.com/BARDIS99" target="_blank" rel="noopener" class="contact__card"><div class="contact__card-info"><span class="contact__card-label">GITHUB</span><span class="contact__card-val">github.com/BARDIS99</span></div></a>
+  <section class="card contact" id="contact">
+    <div>
+      <p class="eyebrow">LET'S CONNECT</p>
+      <h3>Have a project in mind?</h3>
+      <p>Email or GitHub — I reply.</p>
+      <ul class="contact-list">
+        <li>bardisbas@gmail.com</li>
+        <li>github.com/BARDIS99</li>
+        <li>Taraba, Nigeria</li>
+      </ul>
     </div>
+    <form action="mailto:bardisbas@gmail.com" method="get">
+      <input type="text" name="subject" placeholder="Your Name">
+      <input type="email" placeholder="Your Email">
+      <textarea name="body" rows="5" placeholder="Your Message"></textarea>
+      <button class="btn btn--dark" type="submit">Send Message →</button>
+    </form>
   </section>
-</main>
-<footer class="footer"><div class="footer__inner"><span class="footer__brand">[IBRAHIM]</span><p>Designed & built by Ibrahim · <span id="year"></span></p></div></footer>
+  <footer>Designed &amp; built by Ibrahim · <span id="year"></span></footer>
+</div>
 <script src="script.js"></script>
-<script src="magic.js"></script>
 </body>
 </html>
