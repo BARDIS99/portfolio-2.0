@@ -1,0 +1,15 @@
+/* MAGIC UI */
+body{cursor:none}
+a,button{cursor:none}
+.magic-cursor{position:fixed;width:10px;height:10px;border-radius:50%;background:#FCD34D;box-shadow:0 0 18px 6px rgba(245,158,11,.55);pointer-events:none;z-index:10000;transform:translate(-50%,-50%);mix-blend-mode:screen}
+.magic-cursor__ring{position:fixed;width:36px;height:36px;border:1px solid rgba(252,211,77,.55);border-radius:50%;pointer-events:none;z-index:9999;transform:translate(-50%,-50%);transition:width .2s,height .2s,border-color .2s}
+.magic-spotlight{position:fixed;inset:0;pointer-events:none;z-index:1;background:radial-gradient(420px circle at var(--mx,50%) var(--my,20%),rgba(245,158,11,.12),transparent 45%)}
+.hero__content{position:relative;z-index:2}
+.hero .reveal{opacity:1;transform:none}
+.hero__name{background:linear-gradient(90deg,#fff 0%,#FCD34D 40%,#F59E0B 70%,#F43F5E 100%);-webkit-background-clip:text;background-clip:text;color:transparent;text-shadow:0 0 40px rgba(245,158,11,.25)}
+.hero__desc{color:#C9C4B8}
+.pcard,.skill-card,.contact__card{transition:transform .25s ease,box-shadow .25s ease,border-color .25s ease}
+.pcard:hover,.skill-card:hover,.contact__card:hover{transform:translateY(-6px);box-shadow:0 0 0 1px rgba(252,211,77,.35),0 20px 50px rgba(245,158,11,.12);border-color:var(--border-hi)}
+.spark{position:fixed;width:4px;height:4px;border-radius:50%;background:#FCD34D;pointer-events:none;z-index:9998;animation:spark-fly .7s ease-out forwards}
+@keyframes spark-fly{to{opacity:0;transform:translate(var(--sx),var(--sy)) scale(0)}}
+@media (pointer:coarse){body{cursor:auto}.magic-cursor,.magic-cursor__ring{display:none}}
