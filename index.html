@@ -3,139 +3,176 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Ibrahim — Full Stack Developer</title>
-<meta name="description" content="Portfolio of Ibrahim — Computer Science student, SIWES intern, and full stack developer.">
+<title>IBRAHIM // FULL STACK — 2026</title>
+<meta name="description" content="Ibrahim — CS student, SIWES intern, full stack developer. Systems that ship.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;800&family=Share+Tech+Mono&family=Syne:wght@500;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<div class="glow glow-a"></div>
-<div class="glow glow-b"></div>
-<div class="page">
-  <header class="nav">
-    <a class="brand" href="#top">
-      <span class="brand__mark">I</span>
-      <span><strong>Ibrahim</strong><small>Full Stack Developer</small></span>
-    </a>
-    <nav>
-      <a href="#top" class="is-active">Home</a>
-      <a href="#about">About</a>
-      <a href="#services">Services</a>
-      <a href="#work">Work</a>
-      <a href="#process">Process</a>
-      <a href="#contact">Contact</a>
-    </nav>
-    <a class="btn btn--dark" href="#contact">Let's Talk →</a>
+<canvas id="grid"></canvas>
+<div class="scan"></div>
+<div class="vignette"></div>
+
+<aside class="hud-left">
+  <div class="tick">SYS.OK</div>
+  <div class="tick">LAT 08°N</div>
+  <div class="tick">NG · TARABA</div>
+  <div class="tick pulse">LIVE</div>
+</aside>
+
+<header class="topbar">
+  <a class="sig" href="#top">IB//99</a>
+  <nav>
+    <a href="#about">01 ABOUT</a>
+    <a href="#services">02 OPS</a>
+    <a href="#work">03 ARCHIVE</a>
+    <a href="#contact">04 LINK</a>
+  </nav>
+  <a class="cta" href="#contact">INIT CONTACT</a>
+</header>
+
+<main id="top">
+  <section class="hero">
+    <div class="hero-meta">
+      <span class="chip">NODE · SIWES 2026</span>
+      <span class="chip chip-ok">● ACTIVE</span>
+    </div>
+    <p class="idline">IDENTITY CONFIRMED</p>
+    <h1>IBRAHIM</h1>
+    <h2>FULL STACK DEVELOPER</h2>
+    <p class="lead">I craft web apps and systems that are simple, useful, and live. CS student on SIWES at Sandlip Oasis — I ship real things.</p>
+    <div class="actions">
+      <a class="cta" href="#work">OPEN ARCHIVE</a>
+      <a class="ghost" href="https://github.com/BARDIS99" target="_blank" rel="noopener">GITHUB.BARDIS99</a>
+    </div>
+    <p class="stack">REACT · PYTHON · TYPESCRIPT · VERCEL</p>
+  </section>
+
+  <aside class="hero-vis">
+    <div class="frame">
+      <div class="frame-corner tl"></div>
+      <div class="frame-corner tr"></div>
+      <div class="frame-corner bl"></div>
+      <div class="frame-corner br"></div>
+      <img src="img/profile.jpg" alt="Ibrahim">
+      <div class="hud-tag">SUBJ · IBRAHIM</div>
+    </div>
+    <div class="stat-strip">
+      <div><b>8+</b><span>SHIPPED</span></div>
+      <div><b>2026</b><span>SIWES</span></div>
+      <div><b>NG</b><span>TARABA</span></div>
+    </div>
+  </aside>
+</main>
+
+<section class="block" id="about">
+  <header class="sec-h">
+    <span>01 / ABOUT</span>
+    <h3>BUILDING WITH PURPOSE.<br>SHIPPING WITH CARE.</h3>
   </header>
-  <section class="panel hero" id="top">
-    <div class="hero__copy">
-      <p class="eyebrow">HELLO, I'M</p>
-      <h1>Ibrahim</h1>
-      <h2>Full Stack Developer</h2>
-      <p class="lead">I craft web apps and systems that are simple, useful, and live. CS student on SIWES at Sandlip Oasis — I ship real things.</p>
-      <div class="hero__actions">
-        <a class="btn btn--dark" href="#work">View My Work →</a>
-        <a class="btn btn--ghost" href="https://github.com/BARDIS99" target="_blank" rel="noopener">GitHub</a>
-      </div>
-      <p class="trusted">Building with React · Python · Vercel</p>
-    </div>
-    <div class="hero__visual">
-      <div class="orb"></div>
-      <div class="photo-wrap"><img src="img/profile.jpg" alt="Ibrahim"></div>
-      <div class="float float--exp"><b>8+</b><span>Projects shipped</span></div>
-      <div class="float float--live"><span>SIWES 2026</span><strong>● Active</strong></div>
-    </div>
-  </section>
-  <section class="panel" id="about">
-    <div class="about">
-      <div>
-        <p class="eyebrow">ABOUT ME</p>
-        <h3>Building with purpose.<br>Shipping with care.</h3>
-        <div class="stats">
-          <div class="stat"><b>8+</b><span>Projects</span></div>
-          <div class="stat"><b>2026</b><span>SIWES year</span></div>
-          <div class="stat"><b>NG</b><span>Taraba</span></div>
-        </div>
-      </div>
-      <div class="about__text">
-        <p>I'm a Computer Science student from Taraba State, Nigeria. June–December 2026 I'm on industrial training at Sandlip Oasis, focused on full stack web development.</p>
-        <p>I learn by shipping. Clean, minimal code over clever code.</p>
-        <a class="btn btn--ghost" href="#contact">More About Me →</a>
-      </div>
-    </div>
-  </section>
-  <section class="panel" id="services">
-    <p class="eyebrow">WHAT I DO</p>
-    <h3>Services I Offer</h3>
-    <div class="services">
-      <article class="tile"><span class="ico ico-a">▣</span><h4>Web Apps</h4><p>Responsive product UIs with HTML, CSS, JS and React.</p></article>
-      <article class="tile"><span class="ico ico-b">◈</span><h4>Backend</h4><p>APIs and data with Python, Flask, Node and SQLite.</p></article>
-      <article class="tile"><span class="ico ico-c">▦</span><h4>Dashboards</h4><p>Studio tools and attendance flows that stay simple.</p></article>
-      <article class="tile"><span class="ico ico-d">↑</span><h4>Ship &amp; Host</h4><p>GitHub to Vercel/Render — idea to live URL.</p></article>
-    </div>
-  </section>
-  <section class="panel" id="skills">
-    <p class="eyebrow">TOOLS &amp; SKILLS</p>
-    <h3>Technologies I Use</h3>
-    <div class="tech">
-      <span>HTML</span><span>CSS</span><span>JavaScript</span><span>React</span>
-      <span>TypeScript</span><span>Python</span><span>Flask</span><span>Node.js</span>
-      <span>SQLite</span><span>Supabase</span><span>Git</span><span>Vercel</span>
-    </div>
-  </section>
-  <section class="panel" id="work">
-    <div class="row">
-      <div><p class="eyebrow">FEATURED PROJECTS</p><h3>Selected Work</h3></div>
-      <a class="btn btn--ghost" href="https://github.com/BARDIS99" target="_blank" rel="noopener">View All →</a>
-    </div>
-    <div class="work">
-      <a class="work-card" href="https://9jaclip-global.vercel.app/studio" target="_blank" rel="noopener"><div class="shot s1"></div><div class="work-meta"><div><b>9jaClip</b><small>React · TypeScript · Supabase</small></div><span>→</span></div></a>
-      <a class="work-card" href="https://oasis-clock-in.vercel.app" target="_blank" rel="noopener"><div class="shot s2"></div><div class="work-meta"><div><b>Oasis Clock-In</b><small>Attendance system</small></div><span>→</span></div></a>
-      <a class="work-card" href="https://v0-student-education-website.vercel.app" target="_blank" rel="noopener"><div class="shot s3"></div><div class="work-meta"><div><b>EduDocs</b><small>Student learning platform</small></div><span>→</span></div></a>
-    </div>
-    <div class="work work--mini">
-      <a class="mini" href="https://todo-web-1m4q.vercel.app" target="_blank" rel="noopener"><b>To-Do App</b><small>Vanilla JS</small></a>
-      <a class="mini" href="https://note-app-steel-tau.vercel.app" target="_blank" rel="noopener"><b>Note App</b><small>Vanilla JS</small></a>
-      <a class="mini" href="https://weather-app-gq8y.vercel.app" target="_blank" rel="noopener"><b>Atmos</b><small>Weather</small></a>
-      <a class="mini" href="https://v0-blind-voting-app.vercel.app" target="_blank" rel="noopener"><b>Blind Voting</b><small>Polls</small></a>
-      <a class="mini" href="https://landing-page-psi-pearl-87.vercel.app" target="_blank" rel="noopener"><b>Speaker FX</b><small>Landing</small></a>
-    </div>
-  </section>
-  <section class="panel" id="process">
-    <p class="eyebrow">MY PROCESS</p>
-    <h3>How I Build</h3>
-    <div class="steps">
-      <div><em>01</em><b>Discover</b><p>Understand the problem.</p></div>
-      <div><em>02</em><b>Define</b><p>Scope a version that can ship.</p></div>
-      <div><em>03</em><b>Build</b><p>Clean UI and working backend.</p></div>
-      <div><em>04</em><b>Test</b><p>Use it, break it, fix it.</p></div>
-      <div><em>05</em><b>Ship</b><p>Deploy and keep improving.</p></div>
-    </div>
-  </section>
-  <section class="panel contact" id="contact">
+  <div class="two">
+    <p>I'm a Computer Science student from Taraba State, Nigeria. June–December 2026 I'm on industrial training at Sandlip Oasis, focused on full stack web development.</p>
+    <p>I learn by shipping. Clean, minimal code over clever code.</p>
+  </div>
+</section>
+
+<section class="block" id="services">
+  <header class="sec-h">
+    <span>02 / OPS</span>
+    <h3>WHAT I RUN</h3>
+  </header>
+  <div class="grid4">
+    <article><em>01</em><h4>WEB APPS</h4><p>Responsive product UIs with HTML, CSS, JS and React.</p></article>
+    <article><em>02</em><h4>BACKEND</h4><p>APIs and data with Python, Flask, Node and SQLite.</p></article>
+    <article><em>03</em><h4>DASHBOARDS</h4><p>Studio tools and attendance flows that stay simple.</p></article>
+    <article><em>04</em><h4>SHIP & HOST</h4><p>GitHub to Vercel/Render — idea to live URL.</p></article>
+  </div>
+</section>
+
+<section class="block" id="skills">
+  <header class="sec-h">
+    <span>02.1 / TOOLS</span>
+    <h3>TECH STACK</h3>
+  </header>
+  <div class="tech">
+    <span>HTML</span><span>CSS</span><span>JavaScript</span><span>React</span>
+    <span>TypeScript</span><span>Python</span><span>Flask</span><span>Node.js</span>
+    <span>SQLite</span><span>Supabase</span><span>Git</span><span>Vercel</span>
+  </div>
+</section>
+
+<section class="block" id="work">
+  <header class="sec-h row">
     <div>
-      <p class="eyebrow">LET'S WORK TOGETHER</p>
-      <h3>Have a project in mind?</h3>
-      <p class="lead">Email or GitHub — I reply.</p>
-      <ul class="facts">
-        <li>bardisbas@gmail.com</li>
-        <li>github.com/BARDIS99</li>
-        <li>Taraba, Nigeria</li>
-      </ul>
+      <span>03 / ARCHIVE</span>
+      <h3>SELECTED WORK</h3>
     </div>
-    <form action="mailto:bardisbas@gmail.com" method="get">
-      <div class="form-row">
-        <input type="text" name="subject" placeholder="Your Name">
-        <input type="email" placeholder="Your Email">
-      </div>
-      <textarea name="body" rows="5" placeholder="Your Message"></textarea>
-      <button class="btn btn--dark" type="submit">Send Message →</button>
-    </form>
-  </section>
-  <footer>Designed &amp; built by Ibrahim · <span id="year"></span></footer>
-</div>
+    <a class="ghost" href="https://github.com/BARDIS99" target="_blank" rel="noopener">ALL REPOS →</a>
+  </header>
+  <div class="work">
+    <a href="https://9jaclip-global.vercel.app/studio" target="_blank" rel="noopener">
+      <small>01</small><b>9jaClip</b><span>React · TypeScript · Supabase</span>
+    </a>
+    <a href="https://oasis-clock-in.vercel.app" target="_blank" rel="noopener">
+      <small>02</small><b>Oasis Clock-In</b><span>Attendance system</span>
+    </a>
+    <a href="https://v0-student-education-website.vercel.app" target="_blank" rel="noopener">
+      <small>03</small><b>EduDocs</b><span>Student learning platform</span>
+    </a>
+    <a href="https://todo-web-1m4q.vercel.app" target="_blank" rel="noopener">
+      <small>04</small><b>To-Do App</b><span>Vanilla JS</span>
+    </a>
+    <a href="https://note-app-steel-tau.vercel.app" target="_blank" rel="noopener">
+      <small>05</small><b>Note App</b><span>Vanilla JS</span>
+    </a>
+    <a href="https://weather-app-gq8y.vercel.app" target="_blank" rel="noopener">
+      <small>06</small><b>Atmos</b><span>Weather</span>
+    </a>
+    <a href="https://v0-blind-voting-app.vercel.app" target="_blank" rel="noopener">
+      <small>07</small><b>Blind Voting</b><span>Polls</span>
+    </a>
+    <a href="https://landing-page-psi-pearl-87.vercel.app" target="_blank" rel="noopener">
+      <small>08</small><b>Speaker FX</b><span>Landing</span>
+    </a>
+  </div>
+</section>
+
+<section class="block" id="process">
+  <header class="sec-h">
+    <span>03.1 / PROTOCOL</span>
+    <h3>HOW I BUILD</h3>
+  </header>
+  <ol class="proto">
+    <li><b>DISCOVER</b> Understand the problem.</li>
+    <li><b>DEFINE</b> Scope a version that can ship.</li>
+    <li><b>BUILD</b> Clean UI and working backend.</li>
+    <li><b>TEST</b> Use it, break it, fix it.</li>
+    <li><b>SHIP</b> Deploy and keep improving.</li>
+  </ol>
+</section>
+
+<section class="block contact" id="contact">
+  <header class="sec-h">
+    <span>04 / LINK</span>
+    <h3>HAVE A PROJECT IN MIND?</h3>
+  </header>
+  <p class="lead">Email or GitHub — I reply.</p>
+  <ul class="facts">
+    <li>bardisbas@gmail.com</li>
+    <li>github.com/BARDIS99</li>
+    <li>Taraba, Nigeria</li>
+  </ul>
+  <form action="mailto:bardisbas@gmail.com" method="get">
+    <input type="text" name="subject" placeholder="NAME">
+    <input type="email" placeholder="EMAIL">
+    <textarea name="body" rows="5" placeholder="TRANSMISSION"></textarea>
+    <button class="cta" type="submit">SEND SIGNAL</button>
+  </form>
+</section>
+
+<footer>DESIGNED & BUILT BY IBRAHIM · <span id="year"></span> · NODE ONLINE</footer>
 <script src="script.js"></script>
 </body>
 </html>
