@@ -3,7 +3,7 @@ import MediaClipScrubber from './MediaClipScrubber'
 import { ExternalLink, Layers, Scissors, Film, CheckCircle2, Zap, ArrowUpRight, Clock } from 'lucide-react'
 
 export default function ProjectsSection({ onSelectProject }) {
-  const project = PROJECTS_DATA[0] // 9jaClip Media Clipping Website
+  const project = PROJECTS_DATA[0]
 
   return (
     <section id="works" className="py-24 relative z-10 border-t border-stone-200/80 bg-[#FAF9F6]">
@@ -19,19 +19,18 @@ export default function ProjectsSection({ onSelectProject }) {
             9jaClip — <span className="italic font-normal text-stone-600">Clipping Website</span>
           </h2>
           <p className="text-base text-stone-600 leading-relaxed font-normal">
-            A fast, high-retention clipping platform built for content creators, streamers, and viewers to capture, cut, timestamp, and distribute viral video highlights and moments.
+            A fast, high-retention clipping platform built for content creators, streamers, and viewers to capture, cut, timestamp, and distribute viral video highlights.
           </p>
         </div>
 
-        {/* Flagship Large Bento Showcase Card (Light Luxury Editorial) */}
+        {/* Flagship Showcase Card */}
         <div className="rounded-3xl border border-stone-200 bg-white/80 backdrop-blur-xl overflow-hidden shadow-[0_20px_50px_rgba(0,0,0,0.04)] relative">
           
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-0">
             
-            {/* Left 7 Cols: Interactive Live Scrubber & Feature Overview */}
+            {/* Left: Live Scrubber */}
             <div className="lg:col-span-7 flex flex-col justify-between bg-stone-50/50 border-b lg:border-b-0 lg:border-r border-stone-200 p-6 sm:p-8 space-y-6">
               
-              {/* Header Box */}
               <div className="p-6 rounded-2xl bg-white border border-stone-200/90 shadow-sm space-y-3">
                 <div className="flex items-center justify-between">
                   <span className="px-3 py-1 rounded-full bg-stone-100 text-stone-800 font-mono-tech text-xs font-semibold flex items-center gap-1.5">
@@ -52,30 +51,29 @@ export default function ProjectsSection({ onSelectProject }) {
                   </p>
                 </div>
 
-                {/* Tech Tags */}
                 <div className="flex flex-wrap gap-2 pt-1 text-xs font-mono-tech text-stone-500">
                   <span className="text-stone-800 font-medium">React 18</span>
                   <span aria-hidden="true">·</span>
                   <span className="text-stone-800 font-medium">TypeScript</span>
                   <span aria-hidden="true">·</span>
-                  <span className="text-stone-800 font-medium">Supabase Cloud Video</span>
+                  <span className="text-stone-800 font-medium">Supabase</span>
                   <span aria-hidden="true">·</span>
                   <span className="text-stone-800 font-medium">Vercel CDN</span>
                 </div>
               </div>
 
-              {/* Interactive Video Timeline Scrubber */}
+              {/* Live Demo — no boring label */}
               <div className="space-y-2">
                 <div className="text-xs font-mono-tech text-stone-600 font-semibold uppercase tracking-wider flex items-center gap-1.5">
                   <Zap className="w-3.5 h-3.5 text-stone-900" />
-                  <span>Interactive Trimming Engine</span>
+                  <span>Live Demo</span>
                 </div>
                 <MediaClipScrubber />
               </div>
 
             </div>
 
-            {/* Right 5 Cols: Architecture Solves & Specs */}
+            {/* Right: Specs */}
             <div className="lg:col-span-5 p-6 sm:p-8 flex flex-col justify-between space-y-6 bg-white">
               
               <div className="space-y-5">
@@ -84,14 +82,13 @@ export default function ProjectsSection({ onSelectProject }) {
                     SYSTEM HIGHLIGHTS
                   </div>
                   <h3 className="font-serif-luxury text-2xl font-bold text-stone-900">
-                    Engineered for Instant Clips
+                    Built for Instant Clips
                   </h3>
                   <p className="text-xs sm:text-sm text-stone-600 leading-relaxed">
-                    Designed to eliminate upload drop-offs and complex editing friction. Fast clip extraction directly inside the browser.
+                    Designed to eliminate upload drop-offs and complex editing friction. Fast clip extraction directly in the browser.
                   </p>
                 </div>
 
-                {/* Highlights List */}
                 <div className="space-y-2.5">
                   {project.architecturalHighlights.map((highlight, idx) => (
                     <div
@@ -104,7 +101,6 @@ export default function ProjectsSection({ onSelectProject }) {
                   ))}
                 </div>
 
-                {/* Benchmark Metrics Strip */}
                 <div className="grid grid-cols-2 gap-3 pt-2">
                   <div className="p-3.5 rounded-xl bg-stone-50 border border-stone-200/80">
                     <div className="text-[10px] font-mono-tech text-stone-500 uppercase">Export Speed</div>
@@ -117,7 +113,6 @@ export default function ProjectsSection({ onSelectProject }) {
                 </div>
               </div>
 
-              {/* Action Buttons */}
               <div className="pt-4 border-t border-stone-100 flex flex-col sm:flex-row items-stretch sm:items-center gap-3">
                 <a
                   href={project.liveUrl}
@@ -125,7 +120,7 @@ export default function ProjectsSection({ onSelectProject }) {
                   rel="noreferrer"
                   className="flex-1 py-3 px-5 rounded-full bg-stone-900 hover:bg-stone-800 text-white font-medium text-xs transition-all flex items-center justify-center gap-2 shadow-md hover:shadow-lg hover:-translate-y-0.5"
                 >
-                  <span>Launch 9jaClip Website</span>
+                  <span>Launch 9jaClip</span>
                   <ArrowUpRight className="w-3.5 h-3.5" />
                 </a>
 
@@ -144,7 +139,7 @@ export default function ProjectsSection({ onSelectProject }) {
 
         </div>
 
-        {/* Upcoming Deployments Queue (Staged for new pushes) */}
+        {/* Upcoming */}
         <div className="pt-4 space-y-6">
           <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-2 border-b border-stone-200/80 pb-4">
             <div>

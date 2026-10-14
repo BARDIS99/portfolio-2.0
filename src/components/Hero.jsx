@@ -1,4 +1,4 @@
-import { ArrowRight, Play, Sparkles } from 'lucide-react'
+import { ArrowRight, Play } from 'lucide-react'
 import InteractiveStage from './InteractiveStage'
 
 export default function Hero() {
@@ -14,7 +14,7 @@ export default function Hero() {
 
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
         
-        {/* Top Right Decorative Stamp (Like in reference UI) */}
+        {/* Top Right Decorative Stamp */}
         <div className="hidden lg:flex absolute right-4 top-2 flex-col items-center pointer-events-none opacity-80">
           <div className="w-20 h-20 rounded-full border border-stone-300/80 flex items-center justify-center relative">
             <span className="text-[9px] uppercase tracking-widest font-mono-tech text-stone-500 text-center leading-tight">
@@ -23,7 +23,7 @@ export default function Hero() {
           </div>
         </div>
 
-        {/* Big Editorial Headline matching the reference image */}
+        {/* Clean professional headline */}
         <div className="space-y-5 max-w-4xl mx-auto">
           
           <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white border border-stone-200 shadow-sm text-xs font-mono-tech text-stone-700">
@@ -32,24 +32,24 @@ export default function Hero() {
           </div>
 
           <h1 className="font-serif-luxury text-5xl sm:text-7xl lg:text-8xl tracking-tight text-stone-900 leading-[1.02]">
-            <span>Crafting systems </span>
+            <span>Ibrahim</span>
             <br />
             <span className="italic font-normal text-stone-600">
-              that ship & endure.
+              builds products that scale.
             </span>
           </h1>
 
           <p className="text-base sm:text-lg text-stone-600 max-w-2xl mx-auto leading-relaxed font-normal">
-            I'm <span className="text-stone-900 font-semibold">Ibrahim</span>. Systems engineer, builder behind <span className="text-stone-900 font-semibold">9jaClip</span>, and financial market trader. Engineering high-speed web platforms while analyzing global liquidity and managing risk with mathematical discipline.
+            Systems engineer behind <span className="text-stone-900 font-semibold">9jaClip</span>, financial market trader, and full-stack developer. High-performance web platforms. Disciplined risk management.
           </p>
 
-          {/* Two Pill Action Buttons */}
+          {/* Action Buttons */}
           <div className="pt-2 flex flex-wrap items-center justify-center gap-3">
             <a
               href="#works"
               className="px-7 py-3 rounded-full bg-stone-900 hover:bg-stone-800 text-white font-medium text-sm transition-all flex items-center gap-2 shadow-lg shadow-stone-900/10 hover:shadow-xl hover:-translate-y-0.5"
             >
-              <span>Explore 9jaClip</span>
+              <span>View Projects</span>
               <ArrowRight className="w-4 h-4" />
             </a>
 
@@ -60,13 +60,13 @@ export default function Hero() {
               <div className="w-5 h-5 rounded-full bg-stone-100 flex items-center justify-center">
                 <Play className="w-3 h-3 text-stone-900 fill-stone-900 ml-0.5" />
               </div>
-              <span>Try Live Trimmer</span>
+              <span>Try Live Demo</span>
             </button>
           </div>
 
         </div>
 
-        {/* 3D Center Stage with Ibrahim's Portrait & Orbiting Moving Cards */}
+        {/* 3D Center Stage */}
         <div className="mt-6 sm:mt-10">
           <InteractiveStage />
         </div>

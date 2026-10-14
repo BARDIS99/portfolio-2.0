@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { Mail, Copy, Check, Send, Sparkles, MapPin, ArrowUpRight } from 'lucide-react'
+import { Mail, Copy, Check, Send, MapPin, ArrowUpRight } from 'lucide-react'
 import GithubIcon from './GithubIcon'
 
 export default function ContactSection() {
@@ -40,39 +40,39 @@ export default function ContactSection() {
         {/* Section Header */}
         <div className="space-y-3 max-w-2xl">
           <div className="text-xs font-mono-tech text-stone-500 font-semibold uppercase tracking-widest">
-            Initiate Contact
+            Get in Touch
           </div>
           <h2 className="font-serif-luxury text-4xl sm:text-5xl lg:text-6xl tracking-tight text-stone-900 leading-[1.05]">
-            Ready to engineer <span className="italic font-normal text-stone-600">something bold?</span>
+            Let's build <span className="italic font-normal text-stone-600">something real.</span>
           </h2>
           <p className="text-base text-stone-600 leading-relaxed font-normal">
-            Available for full-stack engineering roles, ambitious production builds, and creative collaboration.
+            Available for full-stack roles, production builds, trading collaboration, and creative projects.
           </p>
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 items-start">
           
-          {/* Left Column: Direct Channels */}
+          {/* Left: Direct Channels */}
           <div className="lg:col-span-5 space-y-6">
             <div className="p-8 rounded-3xl bg-white border border-stone-200/90 shadow-sm space-y-6">
               <div className="space-y-1">
-                <div className="text-xs font-mono-tech text-stone-400 font-semibold uppercase">DIRECT DISPATCH</div>
+                <div className="text-xs font-mono-tech text-stone-400 font-semibold uppercase">DIRECT CHANNELS</div>
                 <h3 className="font-serif-luxury text-2xl font-bold text-stone-900">
-                  Engineering Inquiries
+                  Reach Out
                 </h3>
                 <p className="text-xs text-stone-500">
-                  Direct channels with response turnaround under 12 hours.
+                  Response within 12 hours.
                 </p>
               </div>
 
-              {/* Email channel with one-click copy */}
+              {/* Email */}
               <div className="p-4 rounded-2xl bg-stone-50 border border-stone-200/80 flex items-center justify-between gap-3">
                 <div className="flex items-center gap-3 overflow-hidden">
                   <div className="p-2.5 rounded-xl bg-stone-900 text-white shrink-0">
                     <Mail className="w-4 h-4" />
                   </div>
                   <div className="overflow-hidden">
-                    <div className="text-[10px] font-mono-tech text-stone-400 uppercase">Email Address</div>
+                    <div className="text-[10px] font-mono-tech text-stone-400 uppercase">Email</div>
                     <a
                       href={`mailto:${emailAddress}`}
                       className="text-xs sm:text-sm font-medium text-stone-900 hover:text-stone-600 transition-colors truncate block"
@@ -85,7 +85,6 @@ export default function ContactSection() {
                 <button
                   onClick={handleCopyEmail}
                   className="px-3 py-1.5 rounded-full bg-white hover:bg-stone-100 text-stone-700 text-xs font-medium border border-stone-200 flex items-center gap-1.5 transition-colors shrink-0 cursor-pointer shadow-sm"
-                  title="Copy email address"
                 >
                   {copied ? (
                     <>
@@ -101,14 +100,14 @@ export default function ContactSection() {
                 </button>
               </div>
 
-              {/* GitHub Channel */}
+              {/* GitHub */}
               <div className="p-4 rounded-2xl bg-stone-50 border border-stone-200/80 flex items-center justify-between gap-3">
                 <div className="flex items-center gap-3">
                   <div className="p-2.5 rounded-xl bg-stone-900 text-white shrink-0">
                     <GithubIcon className="w-4 h-4" />
                   </div>
                   <div>
-                    <div className="text-[10px] font-mono-tech text-stone-400 uppercase">GitHub Profile</div>
+                    <div className="text-[10px] font-mono-tech text-stone-400 uppercase">GitHub</div>
                     <a
                       href="https://github.com/BARDIS99"
                       target="_blank"
@@ -131,6 +130,31 @@ export default function ContactSection() {
                 </a>
               </div>
 
+              {/* Telegram Trading Groups */}
+              <div className="p-4 rounded-2xl bg-stone-50 border border-stone-200/80 space-y-3">
+                <div className="text-[10px] font-mono-tech text-stone-400 uppercase">Trading Community</div>
+                <div className="space-y-2">
+                  <a
+                    href="https://t.me/zugana01"
+                    target="_blank"
+                    rel="noreferrer"
+                    className="flex items-center justify-between p-2.5 rounded-xl bg-white border border-stone-200 hover:border-stone-400 transition-colors"
+                  >
+                    <span className="text-xs font-medium text-stone-900">ZUGANA Academy</span>
+                    <ArrowUpRight className="w-3.5 h-3.5 text-stone-500" />
+                  </a>
+                  <a
+                    href="https://t.me/zugana2"
+                    target="_blank"
+                    rel="noreferrer"
+                    className="flex items-center justify-between p-2.5 rounded-xl bg-white border border-stone-200 hover:border-stone-400 transition-colors"
+                  >
+                    <span className="text-xs font-medium text-stone-900">ZUGANA Group</span>
+                    <ArrowUpRight className="w-3.5 h-3.5 text-stone-500" />
+                  </a>
+                </div>
+              </div>
+
               {/* Location */}
               <div className="pt-2 border-t border-stone-100 flex items-center justify-between text-xs font-mono-tech text-stone-500">
                 <div className="flex items-center gap-1.5">
@@ -142,14 +166,14 @@ export default function ContactSection() {
             </div>
           </div>
 
-          {/* Right Column: Project Inquiry Form */}
+          {/* Right: Form */}
           <div className="lg:col-span-7">
             <form
               onSubmit={handleSubmit}
               className="p-8 sm:p-10 rounded-3xl bg-white border border-stone-200/90 shadow-sm space-y-5"
             >
               <div className="space-y-1">
-                <div className="text-xs font-mono-tech text-stone-400 uppercase">PROJECT TRANSMISSION</div>
+                <div className="text-xs font-mono-tech text-stone-400 uppercase">MESSAGE</div>
                 <h3 className="font-serif-luxury text-2xl font-bold text-stone-900">
                   Send a direct message
                 </h3>
@@ -157,9 +181,7 @@ export default function ContactSection() {
 
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                 <div className="space-y-1.5">
-                  <label className="text-xs font-mono-tech text-stone-600">
-                    Your Name *
-                  </label>
+                  <label className="text-xs font-mono-tech text-stone-600">Your Name *</label>
                   <input
                     type="text"
                     required
@@ -171,9 +193,7 @@ export default function ContactSection() {
                 </div>
 
                 <div className="space-y-1.5">
-                  <label className="text-xs font-mono-tech text-stone-600">
-                    Your Email *
-                  </label>
+                  <label className="text-xs font-mono-tech text-stone-600">Your Email *</label>
                   <input
                     type="email"
                     required
@@ -186,31 +206,28 @@ export default function ContactSection() {
               </div>
 
               <div className="space-y-1.5">
-                <label className="text-xs font-mono-tech text-stone-600">
-                  Project Focus
-                </label>
+                <label className="text-xs font-mono-tech text-stone-600">Project Focus</label>
                 <select
                   value={formData.projectType}
                   onChange={(e) => setFormData({ ...formData, projectType: e.target.value })}
                   className="w-full px-4 py-3 rounded-xl bg-stone-50 border border-stone-200 text-stone-800 text-xs font-mono-tech focus:border-stone-900 focus:bg-white focus:outline-none transition-colors"
                 >
-                  <option value="9jaClip / Web Application">9jaClip / Media Clipping Engine</option>
+                  <option value="9jaClip / Web Application">9jaClip / Media Platform</option>
                   <option value="Full-Stack Application">Full-Stack Web Application</option>
                   <option value="Enterprise Workforce Tool">Enterprise / Internal Tooling</option>
                   <option value="Full-Time Engineering Role">Full-Time Engineering Role</option>
+                  <option value="Trading Collaboration">Trading Collaboration</option>
                 </select>
               </div>
 
               <div className="space-y-1.5">
-                <label className="text-xs font-mono-tech text-stone-600">
-                  Project Scope & Details *
-                </label>
+                <label className="text-xs font-mono-tech text-stone-600">Details *</label>
                 <textarea
                   rows={4}
                   required
                   value={formData.message}
                   onChange={(e) => setFormData({ ...formData, message: e.target.value })}
-                  placeholder="Tell me about your idea, timeline, or engineering requirements..."
+                  placeholder="Tell me about your idea, timeline, or requirements..."
                   className="w-full px-4 py-3 rounded-xl bg-stone-50 border border-stone-200 text-stone-900 text-xs font-mono-tech focus:border-stone-900 focus:bg-white focus:outline-none transition-colors resize-none"
                 />
               </div>
@@ -227,7 +244,7 @@ export default function ContactSection() {
                 ) : (
                   <>
                     <Send className="w-4 h-4" />
-                    <span>Transmit Message</span>
+                    <span>Send Message</span>
                   </>
                 )}
               </button>
