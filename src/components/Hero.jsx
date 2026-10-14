@@ -26,11 +26,6 @@ export default function Hero() {
         {/* Clean professional headline */}
         <div className="space-y-5 max-w-4xl mx-auto">
           
-          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white border border-stone-200 shadow-sm text-xs font-mono-tech text-stone-700">
-            <span className="w-2 h-2 rounded-full bg-stone-900" />
-            <span>Full-Stack Developer · Market Trader · Builder</span>
-          </div>
-
           <h1 className="font-serif-luxury text-5xl sm:text-7xl lg:text-8xl tracking-tight text-stone-900 leading-[1.02]">
             <span>Ibrahim</span>
             <br />
